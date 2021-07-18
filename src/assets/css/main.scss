@@ -1,0 +1,13 @@
+
+// main.scss: one file to bind them all, one file to rule them all.
+// @forward's all sub files to one easily minified CSS sheet.
+@charset 'utf-8';
+
+// LOAD ORDER: 
+//    [core] -> [vendors] -> [***] -> [pages]
+@forward './core/';
+@forward './vendors/';
+@forward './layout/';
+@forward './components/';
+@forward './modifiers/';
+@forward './pages/';

@@ -1,0 +1,70 @@
+@use '../abstracts/' as *;
+
+::placeholder {
+  text-overflow: ellipsis;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 10px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $gray-90;
+  color: $gray-10;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-family: $font-default;
+  letter-spacing: 0;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+  display: block;
+  width: 100%;
+}
+
+label {
+  font-weight: 400;
+}
+
+strong {
+  font-weight: 500;
+}
+
+legend {
+  display: table;
+}
+
+iframe {
+  display: block;
+  border-width: 0;
+  border-radius: 4px;
+  padding: 0;
+  width: 100%;
+}
+
+//react-app code block
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

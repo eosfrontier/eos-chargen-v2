@@ -1,0 +1,21 @@
+@use '../abstracts/fonts' as f;
+@use '../abstracts/colors' as c;
+
+@mixin _heading-defaults {
+  font-family: f.$font-default;
+  font-weight: 500;
+}
+
+$_header-list: h1, h2, h3, h4, h5, h6;
+
+@each $_header in $_header-list {
+  #{$_header},
+  .#{$_header} {
+    @include _heading-defaults;
+  }
+}
+
+p {
+  font-family: f.$font-default;
+  font-weight: 400;
+}
